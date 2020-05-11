@@ -11,7 +11,7 @@ class Account{
 
   }
 
-  Future<String> read(HEADERS param) async{
+  Future<String> read() async{
     String apiKey = await store.read(key: "apiKey" );
     return apiKey;
 

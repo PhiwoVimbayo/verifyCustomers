@@ -23,7 +23,7 @@ class Resource{
     }
   }
 
-  Future <Map<String, dynamic>>verifyIdNumber(endpoint,payload) async{
+  Future <List< dynamic>>verifyIdNumber(endpoint,payload) async{
     final response = await http.post(verify_id_realtime_verification,
       body: payload
     );
